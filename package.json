@@ -1,0 +1,16 @@
+{
+  "name": "openquizzdb-bot",
+  "version": "1.0.0",
+  "description": "openquizzdb discord bot",
+  "scripts": {
+    "start": "DEBUG='openquizzdb-bot*' node app.js"
+  },
+  "author": "mklabs",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite-pool": "^0.1.2",
+    "debug": "^3.1.0",
+    "discord.js": "^11.4.2",
+    "enmap": "^4.0.7"
+  }
+}

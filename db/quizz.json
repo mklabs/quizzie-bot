@@ -1,0 +1,125 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "Quel nom porte la distribution franÃ§aise de Linux, une des plus simples Ã&nbsp; installer et Ã&nbsp; utiliser?",
+      "reponse_correcte": "Mandriva",
+      "autres_choix": ["Debian", "SUSE", "Slackwave"],
+      "anecdote":
+        "Ciblant Ã&nbsp; la fois le grand public et les professionnels, cette distribution GNU/Linux est construite autour de KDE.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mandriva_Linux"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "En quelle annÃ©e Linus Torvalds a-t-il livrÃ© la premiÃ¨re version du noyau Linux?",
+      "reponse_correcte": "1991",
+      "autres_choix": ["1993", "1995", "1997"],
+      "anecdote":
+        "En 1991, les compatibles PC dominent le marchÃ© des ordinateurs personnels et fonctionnent gÃ©nÃ©ralement sous MS-DOS ou Windows.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Linux"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "Quel ancien mot bantou dÃ©signe une cÃ©lÃ¨bre distribution Linux?",
+      "reponse_correcte": "Ubuntu",
+      "autres_choix": ["Gentoo", "Mandriva", "Fedora"],
+      "anecdote":
+        "Le nom de la distribution provient d'un ancien mot bantou qui signifie Â« Je suis ce que je suis grÃ¢ce Ã&nbsp; ce que nous sommes tous Â».",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Ubuntu"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "Quel environnement graphique de type Â« fenÃªtrÃ© Â» est utilisÃ© sous Linux?",
+      "reponse_correcte": "X Window",
+      "autres_choix": ["K Window", "Z Window", "L Window"],
+      "anecdote":
+        "Cet environnement graphique gÃ¨re l'interaction homme-machine par l'Ã©cran, la souris et le clavier de certains ordinateurs en rÃ©seau.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/X_Window_System"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "Quel navigateur web et gestionnaire de fichiers est utilisÃ© par dÃ©faut pour KDE?",
+      "reponse_correcte": "Konqueror",
+      "autres_choix": ["Firefox", "Netscape", "Chrome"],
+      "anecdote":
+        "Konqueror peut Ã©galement afficher le contenu d'un serveur FTP, permettre de parcourir le rÃ©seau local et de visualiser des fichiers.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Konqueror"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "Quel type de fichiers est pris en compte par le gestionnaires de paquets intÃ©grÃ© Ã&nbsp; Ubuntu?",
+      "reponse_correcte": ".deb",
+      "autres_choix": [".dev", ".rss", ".rpm"],
+      "anecdote":
+        "Par dÃ©faut, Ubuntu est installÃ© avec une pluralitÃ© de logiciels libres tels que LibreOffice, Firefox, Thunderbird et Transmission.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Ubuntu"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "Quelle est la plus ancienne distribution Linux encore maintenue Ã&nbsp; ce jour?",
+      "reponse_correcte": "Slackware",
+      "autres_choix": ["Ubuntu", "Red Hat", "Mandriva"],
+      "anecdote":
+        "Slackware est une distribution Linux qui, Ã&nbsp; la diffÃ©rence d'autres distributions, a longtemps Ã©tÃ© maintenue par une seule personne.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Slackware"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "Sous Linux, quelle commande est utilisÃ©e pour crÃ©er un compte utilisateur?",
+      "reponse_correcte": "Useradd",
+      "autres_choix": ["Adduser", "Passwd", "Mkaccount"],
+      "anecdote":
+        "GrÃ¢ce Ã&nbsp; sa ligne de commande, scientifiques, ingÃ©nieurs et dÃ©veloppeurs comptent parmi ses plus frÃ©quents utilisateurs.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Linux"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "De quel projet sont tirÃ©s les outils gravitant autour de Linux?",
+      "reponse_correcte": "GNU",
+      "autres_choix": ["BSD", "Mimix", "iOS"],
+      "anecdote":
+        "GNU est un projet de systÃ¨me d'exploitation libre lancÃ© en 1983 par Richard Stallman, puis maintenu par le projet GNU.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/GNU"
+    },
+    {
+      "categorie": "informatique",
+      "theme": "Linux",
+      "difficulte": "confirmÃ©",
+      "question":
+        "De quelle distribution Linux est dÃ©rivÃ© le systÃ¨me d'exploitation Ubuntu?",
+      "reponse_correcte": "Debian",
+      "autres_choix": ["Red Hat", "Slackware", "Fedora"],
+      "anecdote":
+        "Ancien dÃ©veloppeur Debian, Mark Shuttleworth souhaitait une version plus facile d'accÃ¨s pour les novices.",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Ubuntu"
+    }
+  ]
+}
