@@ -66,8 +66,8 @@ const quizzGame = async (client, message, map) => {
 
         points[msg.author.toString()] = (points[msg.author.toString()] || 0) + 1;
 
-       await countPoints(client, msg, map);
-       return quizzGameLoop(true, questions.shift());
+        await countPoints(client, msg, map);
+        return quizzGameLoop(true, questions.shift());
       }
 
       // Recall quizz game to relisten on every message
