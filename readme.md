@@ -2,6 +2,11 @@
 
 Quizz Discord bot, aka trivial pursuit in french.
 
+## Install
+
+    #(npm v 10)
+    npm i
+
 ## Description
 
 Ce bot implémente un trivial pursuit afin de jouer entre potes sur discord.
