@@ -47,6 +47,11 @@ const quizzGame = async (client, message, map) => {
   const quizzGameLoop = async (answerFound, question) => {
     debug('quizz game loop, answer', answerFound);
 
+    if (!question) {
+      debug('End of quizz, stop it.');
+      return await quizzGameStop(client, message, map);
+    }
+
     if (answerFound) {
       debug('Question: question', question.question);
       await message.channel.send(`**${question.question}**`);
