@@ -16,11 +16,14 @@ const countPoints = async (client, message, map) => {
     point: points[user]
   }));
 
-  const pointsMessage = pointsMap.sort((a, b) => a.point < b.point).map((score, i) => {
-    return `#${i + 1} (${score.point}) - ${score.user}`;
-  })
+  const pointsMessage = pointsMap
+    .sort((a, b) => a.point < b.point)
+    .map((score, i) => {
+      return `#${i + 1} (${score.point}) - ${score.user}`;
+    });
 
-  if (pointsMessage) await message.channel.send(pointsMessage);
+  debug('pointsMessage', pointsMessage, !!pointsMessage);
+  if (pointsMessage.length) await message.channel.send(pointsMessage);
 };
 
 const assignWinner = async (client, message, map) => {
@@ -32,7 +35,17 @@ const assignWinner = async (client, message, map) => {
   const pointsSorted = pointsMap.sort((a, b) => a.point < b.point);
   const winner = pointsSorted[0];
 
-  await message.channel.send(`And the **winner** is **${winner.user}**!! Tu as gagné ${winner.point} :cookie:.`);
+  if (!winner) {
+    await message.channel.send(
+      "Pas de gagnant :( Personne n'a marqué de points."
+    );
+  } else {
+    await message.channel.send(
+      `And the **winner** is **${winner.user}**!! Tu as gagné ${
+        winner.point
+      } :cookie:.`
+    );
+  }
 };
 
 const quizzGame = async (client, message, map) => {
@@ -41,49 +54,70 @@ const quizzGame = async (client, message, map) => {
   points = {};
 
   // Stop in time
-  const to = setTimeout(() => quizzGameStop(client, message, map), 1000 * 60 * time);
+  const to = setTimeout(
+    () => quizzGameStop(client, message, map),
+    1000 * 60 * time
+  );
 
   const questions = Array.from(db.results);
-  const quizzGameLoop = async (answerFound, question) => {
-    debug('quizz game loop, answer', answerFound);
-
+  const messageLoop = async question => {
     if (!question) {
       debug('End of quizz, stop it.');
       clearTimeout(to);
       return await quizzGameStop(client, message, map);
     }
 
-    if (answerFound) {
-      debug('Question: question', question.question);
-      await message.channel.send(`**${decodeURIComponent(question.question)}**`);
-    }
+    const correctAnswer = decodeURIComponent(
+      question.correct_answer
+    ).toLowerCase().trim().replace(/\.$/, '');
 
-    // Use once here to not trigger on every message but the current gaming session
-    client.once('message', async msg => {
-      debug('Received response', msg.content);
+    // todo: prefix when stopping quizz
+    message.channel
+      .send(`**${decodeURIComponent(question.question)}**`)
+      .then(() => {
+        message.channel
+          .awaitMessages(
+            response => correctAnswer === response.content.toLowerCase() || response.content === 'Stop' || response.content === '!quizz stop',
+            {
+              max: 1,
+              time: 30000,
+              errors: ['time']
+            }
+          )
+          .then(async collected => {
+            const msg = collected.get(message.channel.lastMessageID);
 
-      // Good anwser!
-      if (msg.content === question.correct_answer) {
-        await msg.channel.send(
-          `Correct ${msg.author} - La bonne réponse était ${
-            decodeURIComponent(question.correct_answer)
-          }.`
-        );
+            // todo: prefix
+            if (msg.content === 'Stop' || msg.content === '!quizz stop') {
+              return quizzGameStop(client, message, map);
+            }
 
-        points[msg.author.toString()] = (points[msg.author.toString()] || 0) + 1;
+            message.channel.send(
+              `Correct ${
+                msg.author
+              } - La bonne réponse était **${correctAnswer}**.`
+            );
 
-        await countPoints(client, msg, map);
-        return quizzGameLoop(true, questions.shift());
-      }
+            const author = msg.author.toString();
+            points[author] = (points[author] || 0) + 1;
 
-      // Recall quizz game to relisten on every message
-      await quizzGameLoop(false, question);
-    });
+            await countPoints(client, message, map);
+            messageLoop(questions.shift());
+          })
+          .catch(() => {
+            message.channel.send(
+              `Plus de temps! La réponse correct était **${decodeURIComponent(
+                question.correct_answer
+              )}**`
+            );
+
+            messageLoop(questions.shift());
+          });
+      });
   };
 
-  debug('Start gaming loop session');
-  await quizzGameLoop(true, questions.shift());
-  debug('End gaming loop session');
+  // call once to kick in the process
+  messageLoop(questions.shift());
 };
 
 module.exports = {
