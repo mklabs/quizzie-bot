@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const config = require('./config');
 const { prefix, help, quizz } = require('./commands');
-const debug = require('debug')('openquizzdb-bot:routes');
+const debug = require('debug')('quizzie-bot:routes');
 
 const ready = (client, map) => {
   return () => {

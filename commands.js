@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const config = require('./config');
-const debug = require('debug')('openquizzdb-bot:commands');
+const debug = require('debug')('quizzie-bot:commands');
 const helps = require('./help');
 const { quizzGame, quizzGameStop } = require('./quizz');
 
@@ -113,7 +113,7 @@ const quizz = async (client, message, map) => {
   }
 
   await message.channel.send(`
-**Bienvenue à OpenQuizzDB Night** Je vais tester votre connaissance générale
+**Bienvenue à Quizzie Night** Je vais tester votre connaissance générale
 sur le sujet qui vous sied. A la fin de la session, un gagnant s'en ira avec le
 titre **QuizzDB Brutasse** et des :cookie:.
 

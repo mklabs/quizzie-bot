@@ -5,7 +5,7 @@ module.exports = (client, config) => ({
       name: client.user.username,
       icon_url: client.user.avatarURL
     },
-    title: '!prefix [prefix]',
+    title: `${config.prefix} prefix [prefix]`,
     description: 'This command allow you to change or see the current prefix',
     fields: [
       {
@@ -20,7 +20,7 @@ module.exports = (client, config) => ({
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: '© openquizzdb-bot'
+      text: '© quizzie-bot'
     }
   }
 });

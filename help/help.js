@@ -6,7 +6,7 @@ module.exports = (client, config) => ({
       icon_url: client.user.avatarURL
     },
 
-    title: 'OpenQuizzDB Bot Help',
+    title: 'Quizzie Bot Help',
     description: 'Here are the available commands:',
 
     fields: [
@@ -30,7 +30,7 @@ ${config.prefix}quizz - Starts up a new Quizz session
 
     footer: {
       icon_url: client.user.avatarURL,
-      text: '© openquizzdb-bot'
+      text: '© quizzie-bot'
     }
   }
 });

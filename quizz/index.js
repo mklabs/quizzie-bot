@@ -1,4 +1,4 @@
-const debug = require('debug')('openquizzdb-bot:quizz');
+const debug = require('debug')('quizzie-bot:quizz');
 const db = require('../db/mythology.json');
 
 let points = {};
@@ -41,7 +41,7 @@ const quizzGame = async (client, message, map) => {
   points = {};
 
   // Stop in time
-  setTimeout(() => quizzGameStop(client, message, map), 1000 * 60 * time);
+  const to = setTimeout(() => quizzGameStop(client, message, map), 1000 * 60 * time);
 
   const questions = Array.from(db.results);
   const quizzGameLoop = async (answerFound, question) => {
@@ -49,12 +49,13 @@ const quizzGame = async (client, message, map) => {
 
     if (!question) {
       debug('End of quizz, stop it.');
+      clearTimeout(to);
       return await quizzGameStop(client, message, map);
     }
 
     if (answerFound) {
       debug('Question: question', question.question);
-      await message.channel.send(`**${question.question}**`);
+      await message.channel.send(`**${decodeURIComponent(question.question)}**`);
     }
 
     // Use once here to not trigger on every message but the current gaming session
@@ -65,7 +66,7 @@ const quizzGame = async (client, message, map) => {
       if (msg.content === question.correct_answer) {
         await msg.channel.send(
           `Correct ${msg.author} - La bonne réponse était ${
-            question.correct_answer
+            decodeURIComponent(question.correct_answer)
           }.`
         );
 

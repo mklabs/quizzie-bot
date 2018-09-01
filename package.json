@@ -1,9 +1,9 @@
 {
-  "name": "openquizzdb-bot",
+  "name": "quizzie-bot",
   "version": "1.0.0",
-  "description": "openquizzdb discord bot",
+  "description": "quizzie discord bot",
   "scripts": {
-    "start": "DEBUG='openquizzdb-bot*' node app.js"
+    "start": "DEBUG='quizzie-bot*' node app.js"
   },
   "author": "mklabs",
   "license": "MIT",
