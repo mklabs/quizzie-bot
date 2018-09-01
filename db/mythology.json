@@ -1,0 +1,239 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Talos%2C%20the%20mythical%20giant%20bronze%20man%2C%20was%20the%20protector%20of%20which%20island%3F",
+            "correct_answer": "Crete",
+            "incorrect_answers": [
+                "Sardinia",
+                "Sicily",
+                "Cyprus"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "According%20to%20Algonquian%20folklore%2C%20how%20does%20one%20transform%20into%20a%20Wendigo%3F",
+            "correct_answer": "Participating%20in%20cannibalism.",
+            "incorrect_answers": [
+                "Excessive%20mutilation%20of%20animal%20corpses.",
+                "Performing%20a%20ritual%20involving%20murder.",
+                "Drinking%20the%20blood%20of%20many%20slain%20animals."
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Who%20in%20Greek%20mythology%2C%20who%20led%20the%20Argonauts%20in%20search%20of%20the%20Golden%20Fleece%3F",
+            "correct_answer": "Jason",
+            "incorrect_answers": [
+                "Castor",
+                "Daedalus",
+                "Odysseus"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Neptune%27s%20greek%20name%20was...",
+            "correct_answer": "Poseidon",
+            "incorrect_answers": [
+                "Ares",
+                "Zeus",
+                "Apollo"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%20of%20the%20following%20Mesopotamian%20mythological%20figures%20was%20NOT%20a%20deity%3F",
+            "correct_answer": "Enkidu",
+            "incorrect_answers": [
+                "Enki",
+                "Enlil",
+                "Enkimdu"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "This%20Greek%20goddess%27s%20name%20was%20chosen%20for%20the%20dwarf%20planet%20responsible%20for%20discord%20on%20Pluto%27s%20classification%20amongst%20astronomers.",
+            "correct_answer": "Eris",
+            "incorrect_answers": [
+                "Charon",
+                "Ceres",
+                "Dysnomia"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Who%20was%20the%20King%20of%20Gods%20in%20Ancient%20Greek%20mythology%3F",
+            "correct_answer": "Zeus",
+            "incorrect_answers": [
+                "Apollo",
+                "Hermes",
+                "Poseidon"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "In%20Greek%20Mythology%2C%20who%20was%20the%20daughter%20of%20King%20Minos%3F",
+            "correct_answer": "Ariadne",
+            "incorrect_answers": [
+                "Athena",
+                "Ariel",
+                "Alana"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "In%20Norse%20mythology%2C%20what%20is%20the%20name%20of%20the%20serpent%20which%20eats%20the%20roots%20of%20the%20ash%20tree%20Yggdrasil%3F",
+            "correct_answer": "Nidhogg",
+            "incorrect_answers": [
+                "Bragi",
+                "Odin",
+                "Ymir"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question": "Rannamaari%20was%20a%20sea%20demon%20that%20haunted%20the%20people%20of%20the%20Maldives%20and%20had%20to%20be%20appeased%20monthly%20with%20the%20sacrifice%20of%20a%20virgin%20girl.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In%20Greek%20Mythology%2C%20who%20killed%20Achilles%3F",
+            "correct_answer": "Paris",
+            "incorrect_answers": [
+                "Hector",
+                "Helen",
+                "Pericles"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Nidhogg%20is%20a%20mythical%20creature%20from%20what%20mythology%3F",
+            "correct_answer": "Norse",
+            "incorrect_answers": [
+                "Egyptian",
+                "Greek",
+                "Hindu"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "A%20minotaur%20is%20half%20human%20half%20what%3F",
+            "correct_answer": "Bull",
+            "incorrect_answers": [
+                "Cow",
+                "Horse",
+                "Eagle"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "In%20most%20traditions%2C%20who%20was%20the%20wife%20of%20Zeus%3F",
+            "correct_answer": "Hera",
+            "incorrect_answers": [
+                "Aphrodite",
+                "Athena",
+                "Hestia"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "According%20to%20the%20Egyptian%20Myth%20of%20Osiris%2C%20who%20murdered%20Osiris%3F",
+            "correct_answer": "Set",
+            "incorrect_answers": [
+                "Horus",
+                "Ra",
+                "Anhur"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "The%20Roman%20god%20%22Jupiter%22%20was%20first%20known%20as%20%22Zeus%22%20to%20the%20Greeks.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%20of%20the%20following%20is%20not%20one%20of%20the%20Greek%20Fates%3F",
+            "correct_answer": "Narcissus",
+            "incorrect_answers": [
+                "Clotho",
+                "Atropos",
+                "Lachesis"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "What%20mythology%20did%20the%20god%20%22Apollo%22%20come%20from%3F",
+            "correct_answer": "Greek%20and%20Roman",
+            "incorrect_answers": [
+                "Roman%20and%20Spanish",
+                "Greek%20and%20Chinese",
+                "Greek%2C%20Roman%20and%20Norse"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "The%20Maori%20hold%20that%20which%20island%20nation%20was%20founded%20by%20Kupe%2C%20who%20discovered%20it%20under%20a%20long%20white%20cloud%3F",
+            "correct_answer": "New%20Zealand",
+            "incorrect_answers": [
+                "Vanuatu",
+                "Fiji",
+                "Hawaii"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "boolean",
+            "difficulty": "easy",
+            "question": "A%20wyvern%20is%20the%20same%20as%20a%20dragon.",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        }
+    ]
+}
