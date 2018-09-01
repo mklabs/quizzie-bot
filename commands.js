@@ -108,22 +108,25 @@ const quizz = async (client, message, map) => {
     return await startQuizz(client, message, map);
   }
 
-  if (message.content.startsWith(`${config.prefix}quizz stop`)) {
-    return await stopQuizz(client, message, map);
+  // if (message.content.startsWith(`${config.prefix}quizz stop`)) {
+  //   return await stopQuizz(client, message, map);
+  // }
+
+  if (message.content === `${config.prefix}quizz`) {
+    await message.channel.send(`
+  **Bienvenue à Quizzie Night** Je vais tester votre connaissance générale
+  sur le sujet qui vous sied. A la fin de la session, un gagnant s'en ira avec le
+  titre **QuizzDB Brutasse** et des :cookie:.
+
+  La session de jeu commencera lorsque \`!quizz start\` sera lancée, vous pouvez
+  configurer le quizz selon les commandes suivantes.
+  `);
+
+    await quizzHelp(client, message);
   }
 
-  await message.channel.send(`
-**Bienvenue à Quizzie Night** Je vais tester votre connaissance générale
-sur le sujet qui vous sied. A la fin de la session, un gagnant s'en ira avec le
-titre **QuizzDB Brutasse** et des :cookie:.
-
-La session de jeu commencera lorsque \`!quizz start\` sera lancée, vous pouvez
-configurer le quizz selon les commandes suivantes.
-`);
-
-  await quizzHelp(client, message);
   // setTimeout(() => startQuizz(client, message, map), 1000 * 30);
-  // setTimeout(() => message.channel.send('Le jeu commencera dans 10 secondes ...'), 1000 * 20);
+  // setTimeout(() => message.channel.send('Le jeu commencera dans 10 secondes ...'), 1000 * 10);
 };
 
 module.exports = {
