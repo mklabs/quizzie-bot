@@ -1,5 +1,5 @@
 const debug = require('debug')('openquizzdb-bot:quizz');
-const db = require('../db/quizz.json');
+const db = require('../db/mythology.json');
 
 let points = {};
 const quizzGameStop = async (client, message, map) => {
@@ -57,10 +57,10 @@ const quizzGame = async (client, message, map) => {
       debug('Received response', msg.content);
 
       // Good anwser!
-      if (msg.content === question.reponse_correcte) {
+      if (msg.content === question.correct_answer) {
         await msg.channel.send(
           `Correct ${msg.author} - La bonne réponse était ${
-            question.reponse_correcte
+            question.correct_answer
           }.`
         );
 
